@@ -14,24 +14,14 @@ class ViewController: UIViewController {
     }
     
     func createManagedObjectContext() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        let userEntity = NSEntityDescription.entity(forEntityName: "UserInfo", in: managedContext)
-        
-        let user = NSManagedObject(entity: userEntity!, insertInto: managedContext)
-        
-        user.setValue("Saket", forKeyPath: "firstName")
+        let userEntity = NSEntityDescription.entity(forEntityName: "UserInfo", in: getManagedContext())
+        let user = NSManagedObject(entity: userEntity!, insertInto: getManagedContext())
+        user.setValue("Saurabh", forKeyPath: "firstName")
         user.setValue("Pandhare", forKey: "lastName")
         user.setValue("Pramod", forKey: "middleName")
         user.setValue(9930228151, forKey: "mobileNo")
-        
-        
         do {
-            try managedContext.save()
+            try getManagedContext().save()
         } catch {
             print("Failed Saving")
         }
@@ -43,16 +33,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonFetchData(_ sender: Any) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
         let userFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "UserInfo")
-        
-        let users = try! managedContext.fetch(userFetch)
-        
-        let actualUserInfo: UserInfo = users.first as! UserInfo
+        let users = try! getManagedContext().fetch(userFetch)
+        let actualUserInfo: UserInfo = users.last as! UserInfo
         print("User Info has \(String(describing: actualUserInfo.firstName)))")
     }
     

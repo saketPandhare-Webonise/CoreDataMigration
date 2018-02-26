@@ -18,6 +18,7 @@
 		E018C24B2044011D00E32669 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = E018C24A2044011D00E32669 /* PodFile */; };
 		E07F2520204405310094EA05 /* UserInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F251E204405310094EA05 /* UserInfo+CoreDataClass.swift */; };
 		E07F2521204405310094EA05 /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F251F204405310094EA05 /* UserInfo+CoreDataProperties.swift */; };
+		E07F252320440E520094EA05 /* CommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F252220440E520094EA05 /* CommonHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		E018C24A2044011D00E32669 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		E07F251E204405310094EA05 /* UserInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E07F251F204405310094EA05 /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E07F252220440E520094EA05 /* CommonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				E018C2252044008000E32669 /* LaunchScreen.storyboard */,
 				E018C2282044008000E32669 /* Info.plist */,
 				E018C2202044008000E32669 /* CDMigration.xcdatamodeld */,
+				E07F252220440E520094EA05 /* CommonHelper.swift */,
 			);
 			path = CDMigration;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				E07F2521204405310094EA05 /* UserInfo+CoreDataProperties.swift in Sources */,
 				E018C21C2044008000E32669 /* ViewController.swift in Sources */,
+				E07F252320440E520094EA05 /* CommonHelper.swift in Sources */,
 				E018C2222044008000E32669 /* CDMigration.xcdatamodeld in Sources */,
 				E07F2520204405310094EA05 /* UserInfo+CoreDataClass.swift in Sources */,
 				E018C21A2044008000E32669 /* AppDelegate.swift in Sources */,
