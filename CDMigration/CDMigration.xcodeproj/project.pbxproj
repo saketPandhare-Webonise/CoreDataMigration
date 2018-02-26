@@ -15,6 +15,9 @@
 		E018C2272044008000E32669 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E018C2252044008000E32669 /* LaunchScreen.storyboard */; };
 		E018C2322044008000E32669 /* CDMigrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018C2312044008000E32669 /* CDMigrationTests.swift */; };
 		E018C23D2044008000E32669 /* CDMigrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E018C23C2044008000E32669 /* CDMigrationUITests.swift */; };
+		E018C24B2044011D00E32669 /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = E018C24A2044011D00E32669 /* PodFile */; };
+		E07F2520204405310094EA05 /* UserInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F251E204405310094EA05 /* UserInfo+CoreDataClass.swift */; };
+		E07F2521204405310094EA05 /* UserInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F251F204405310094EA05 /* UserInfo+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		E018C2382044008000E32669 /* CDMigrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDMigrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E018C23C2044008000E32669 /* CDMigrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMigrationUITests.swift; sourceTree = "<group>"; };
 		E018C23E2044008000E32669 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E018C24A2044011D00E32669 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		E07F251E204405310094EA05 /* UserInfo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E07F251F204405310094EA05 /* UserInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 		E018C20D2044007F00E32669 = {
 			isa = PBXGroup;
 			children = (
+				E018C24A2044011D00E32669 /* PodFile */,
 				E018C2182044008000E32669 /* CDMigration */,
 				E018C2302044008000E32669 /* CDMigrationTests */,
 				E018C23B2044008000E32669 /* CDMigrationUITests */,
@@ -99,6 +106,7 @@
 		E018C2182044008000E32669 /* CDMigration */ = {
 			isa = PBXGroup;
 			children = (
+				E018C24C204401B500E32669 /* Model */,
 				E018C2192044008000E32669 /* AppDelegate.swift */,
 				E018C21B2044008000E32669 /* ViewController.swift */,
 				E018C21D2044008000E32669 /* Main.storyboard */,
@@ -126,6 +134,15 @@
 				E018C23E2044008000E32669 /* Info.plist */,
 			);
 			path = CDMigrationUITests;
+			sourceTree = "<group>";
+		};
+		E018C24C204401B500E32669 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E07F251E204405310094EA05 /* UserInfo+CoreDataClass.swift */,
+				E07F251F204405310094EA05 /* UserInfo+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +254,7 @@
 			files = (
 				E018C2272044008000E32669 /* LaunchScreen.storyboard in Resources */,
 				E018C2242044008000E32669 /* Assets.xcassets in Resources */,
+				E018C24B2044011D00E32669 /* PodFile in Resources */,
 				E018C21F2044008000E32669 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07F2521204405310094EA05 /* UserInfo+CoreDataProperties.swift in Sources */,
 				E018C21C2044008000E32669 /* ViewController.swift in Sources */,
 				E018C2222044008000E32669 /* CDMigration.xcdatamodeld in Sources */,
+				E07F2520204405310094EA05 /* UserInfo+CoreDataClass.swift in Sources */,
 				E018C21A2044008000E32669 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
